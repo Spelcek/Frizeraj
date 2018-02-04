@@ -1,0 +1,72 @@
+.glava {
+  width: 800px;
+    font-size: 30px;
+  @include make-container();
+}
+
+.glavna-vrstica {
+  @include make-row();
+}
+
+.glavna-vsebina {background-color: yellow;
+  height:100px;
+  font-size: 30px;
+  @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
+  }
+}
+
+.body {
+  width: 800px;
+    font-size: 30px;
+  @include make-container();
+}
+
+.body-vrstica {
+  width: 800px;
+  background-color: white;
+  @include make-row();
+}
+
+.body-vsebina {background-color: white;
+  font-size: 30px;
+    @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
+  }
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+.druga-glavna-vsebina {font-size: 30px;
+  @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+  }
+}
+
+.Meni {background-color: teal;
+  font-size: 30px;
+  font-family: Verdana;
+  color:red;
+position: absolute;
+    right:2%;
+  top:0%;}
+
+li {font-family:Verdana;
+  display: inline-block;
+text-align: center;}
